@@ -23,10 +23,12 @@ Warning: Using SerafinFile. It is recommended to compile Hermes api
 Time taken by telemac: 0.04706144332885742 seconds
 Time taken by selafin: 0.006855964660644531 seconds
 Time taken by ppUtils: 0.04119277000427246 seconds
+Time taken by pyTelTools: 0.008388519287109375 seconds
 ```
 with HERMES
 ```
 Time taken by telemac: 0.0003180503845214844 seconds
 Time taken by selafin: 0.007878303527832031 seconds
 Time taken by ppUtils: 0.041509151458740234 seconds
+Time taken by pyTelTools: 0.008388519287109375 seconds
 ```

@@ -873,7 +873,6 @@ class Read(Serafin):
         """
         if self.header is None:
             raise SerafinRequestError('Cannot read time without any header (forgot read_header ?)')
-        logger.debug('Reading the time series from the file')
         self.file.seek(self.header.header_size, 0)
         for _ in range(self.header.nb_frames):
             self.file.read(4)

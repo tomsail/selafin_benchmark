@@ -51,6 +51,5 @@ def ppUtils(f):
 def pyTelTools(f):
     with Serafin.Read(f, 'en') as resin:
         resin.read_header()  # fills resin.header (read mesh)
-        # resin.get_time()  # not necessary in this context (only fills `resin.time` to time serie in in float format)
-        for time, values in resin.iter_on_all_frames():
-            pass  # print(time, values .shape)
+        resin.get_time()
+        resin.read_var_in_frame(10,resin.header.var_IDs[0])
