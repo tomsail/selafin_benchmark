@@ -35,7 +35,8 @@ def selafin(f):
 @PERF 
 def telemac(f):
     tel = TelemacFile(f)
-    tel.get_data_value(tel.varnames[0], 10)
+    for varname in tel.varnames:
+        tel.get_data_value(varname, 10)
 
 # ppUtils
 @timer
@@ -50,6 +51,6 @@ def ppUtils(f):
 @PERF
 def pyTelTools(f):
     with Serafin.Read(f, 'en') as resin:
-        resin.read_header()  # fills resin.header (read mesh)
-        resin.get_time()
-        resin.read_var_in_frame(10,resin.header.var_IDs[0])
+        resin.read_header()  # fills resin.header (reads mesh)
+        # resin.get_time()  # fills resin.time but not compulsory here
+        resin.read_vars_in_frame(10)  # read all variables of a specific record
