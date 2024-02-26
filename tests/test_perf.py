@@ -35,8 +35,8 @@ def selafin(f):
 @PERF 
 def telemac(f):
     tel = TelemacFile(f)
-    for i_var in range(len(tel.varnames)):
-        tel.get_data_value(i_var, 10)
+    for varname in tel.varnames:
+        tel.get_data_value(varname, 10)
 
 # ppUtils
 @timer
