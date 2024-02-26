@@ -1,4 +1,4 @@
-# selafin speed bench
+# selafin speed benchmark
 
 to install the selafin benchmark: 
 ```
