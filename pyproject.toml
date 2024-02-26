@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "selafin_benchmark"
+version = "0.1.0"
+description = ""
+authors = ["tomsail <saillour.thomas@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+xarray = "*"
+numpy = "*"
+shapely = "*"
+scipy = "*"
+pytest = "^8.0.2"
+
+[tool.poetry.group.dev.dependencies]
+matplotlib = "*"
+netcdf4 = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
