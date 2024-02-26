@@ -37,7 +37,7 @@ Time taken by selafin: 0.04771304130554199 seconds
 results for a ERA5 monthly wind file (size: 9 GB):
 ```
 Time taken by pyTelTools: 6.695765495300293 seconds
-Time taken by ppUtils: 1.4621760845184326 seconds
+Time taken by ppUtils: 529.0695465195996 seconds
 Warning: Using SerafinFile. It is recommended to compile Hermes api
 Time taken by telemac: 85.85983943939209 seconds
 Time taken by selafin: 98.93528032302856 seconds
